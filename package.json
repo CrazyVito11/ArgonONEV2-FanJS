@@ -1,0 +1,8 @@
+{
+  "name": "argon-one-v2-fan-js",
+  "version": "1.0.0",
+  "dependencies": {
+    "firstline": "^2.0.2",
+    "i2c-bus": "^5.2.2"
+  }
+}

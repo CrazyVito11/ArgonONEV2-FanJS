@@ -1,0 +1,18 @@
+{
+  "i2c_bus": 1,
+  "i2c_address": 26,
+  "fan_speed": [
+    {
+      "minTemp": 0,
+      "speed": 0
+    },
+    {
+      "minTemp": 65,
+      "speed": 10
+    },
+    {
+      "minTemp": 70,
+      "speed": 100
+    }
+  ]
+}
