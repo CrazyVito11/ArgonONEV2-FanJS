@@ -6,20 +6,25 @@ A simple NodeJS application that can control the fan speed of a Argon ONE V2 cas
 - PhpStorm 2020.1.1
 
 ## Basic installation
-1. Use NVM to switch NodeJS versions *(optional, requires NVM to be installed)*
+1. Enable I2C
+    ```console
+    sudo raspi-config
+    ```
+   Go to `Interface Options > I2C` and select Yes
+2. Use NVM to switch NodeJS versions *(optional, requires NVM to be installed)*
     ```console
     nvm use 12
     ```
-2. Make a copy of `example.fan_config.json` and rename it to `fan_config.json`
+3. Make a copy of `example.fan_config.json` and rename it to `fan_config.json`
     ```console
     cp example.fan_config.json fan_config.json
     ```
-3. Change the settings in `fan_config.json` if you want to customize the default settings
-4. Install the Node packages 
+4. Change the settings in `fan_config.json` if you want to customize the default settings
+5. Install the Node packages 
     ```console
     npm install
     ```
-5. Run the `fan.js` file with NodeJS
+6. Run the `fan.js` file with NodeJS
     ```console
     node fan.js
     ```
